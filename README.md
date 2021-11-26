@@ -3,6 +3,8 @@
 Taiga is an anime base discord bot which is completely built to be using using slash command 
 The bot is still under developement but the code is public.
 
+All the codes are in the src folder
+
 
 Support server:-
 <p align='center'>
