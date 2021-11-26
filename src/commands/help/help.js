@@ -53,6 +53,7 @@ module.exports = {
 
       const info = new MessageEmbed()
       .setTitle("Info command!")
+      .setDescription("To get info of commands `\/{command-name} info\`")
       .setAuthor(`${user.username}`, avatar )
       .addFields(
         {name: `\u200B`, value: "`\ ping \` , `\ info user \` , `\ info server \`", inline: true},
@@ -65,9 +66,10 @@ module.exports = {
       
       const affection = new MessageEmbed()
       .setTitle("Affection commands!")
+      .setDescription("To get info of commands `\/{command-name} info\`")
       .setAuthor(`${user.username}`, avatar)
       .addFields(
-        {name: `\u200B`, value: "`\ kiss \` , `\ boop \` , `\ hug \` , `\ kill \` , `\ pat \`", inline: true},
+        {name: `\u200B`, value: "`\ kiss \` , `\ boop \` , `\ hug \` , `\ kill \` , `\ pat \`, `\ slap \`", inline: true},
       )
       .setFooter(client.user.tag , client.user.displayAvatarURL())
       .setTimestamp()
