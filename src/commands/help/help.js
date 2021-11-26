@@ -67,7 +67,7 @@ module.exports = {
       .setTitle("Affection commands!")
       .setAuthor(`${user.username}`, avatar)
       .addFields(
-        {name: `\u200B`, value: "`\ kiss \` , `\ boop \` , `\ hug \` , `\ kill \`", inline: true},
+        {name: `\u200B`, value: "`\ kiss \` , `\ boop \` , `\ hug \` , `\ kill \` , `\ pat \`", inline: true},
       )
       .setFooter(client.user.tag , client.user.displayAvatarURL())
       .setTimestamp()
