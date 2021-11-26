@@ -43,7 +43,7 @@ module.exports = {
       const embed = new MessageEmbed()
       .setTitle("Our full help menu!")
       .setAuthor(`${user.username}`, avatar )
-      .setDescription( `\`\`\`js\nPrefix: Slash commands\n\nExtra information: <> If you see any error or any kind of bug please report to us\n\nSupport Server:- https://discord.gg/Ecy6WpEZsD !\`\`\`\n\n> To check out a category, click on the respective buttons below\n\n`)
+      .setDescription( `\`\`\`js\nPrefix: Slash commands\n\nExtra information: <> If you see any error or any kind of bug please report to us\n\n\`\`\`\n> Support Server : [Join](https://discord.gg/Ecy6WpEZsD) !\n\n> To check out a category, click on the respective buttons below\n\n`)
       .addFields(categories)
       .setFooter(client.user.tag , client.user.displayAvatarURL())
       .setTimestamp()
