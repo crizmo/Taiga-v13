@@ -69,7 +69,7 @@ module.exports = {
       .setDescription("To get info of commands `\/{command-name} info\`")
       .setAuthor(`${user.username}`, avatar)
       .addFields(
-        {name: `\u200B`, value: "`\ kiss \` , `\ boop \` , `\ hug \` , `\ kill \` , `\ pat \`, `\ slap \`", inline: true},
+        {name: `\u200B`, value: "Cmds :`\ kiss \` , `\ boop \` , `\ dance \` , `\ kill \` , `\ spank \` , `\ pat \` , `\ slap \`, `\ hug \`", inline: true},
       )
       .setFooter(client.user.tag , client.user.displayAvatarURL())
       .setTimestamp()
