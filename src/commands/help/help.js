@@ -56,7 +56,7 @@ module.exports = {
       .setDescription("To get info of commands `\/{command-name} info\`")
       .setAuthor(`${user.username}`, avatar )
       .addFields(
-        {name: `\u200B`, value: "`\ ping \` , `\ info user \` , `\ info server \`", inline: true},
+        {name: `\u200B`, value: "`\ ping \` , `\ info user \` , `\ info server \`, `\ github \`", inline: true},
       )
       .setFooter(client.user.tag , client.user.displayAvatarURL())
       .setTimestamp()
