@@ -47,7 +47,7 @@ module.exports = {
       .addFields(categories)
       .setFooter(client.user.tag , client.user.displayAvatarURL())
       .setTimestamp()
-      .setImage("https://media.discordapp.net/attachments/912537423160942593/913322763446542376/IMG_7116.png?width=1188&height=389")
+      .setImage("https://media.discordapp.net/attachments/782648013515784232/913778731779244062/d4rxgz1-55cb98d6-75e0-4270-9401-b9d8bb65ad93.png?width=396&height=198")
       .setThumbnail(avatar)
       .setColor(color);
 
@@ -56,7 +56,7 @@ module.exports = {
       .setDescription("To get info of commands `\/{command-name} info\`")
       .setAuthor(`${user.username}`, avatar )
       .addFields(
-        {name: `\u200B`, value: "`\ ping \` , `\ info user \` , `\ info server \`, `\ github \`, `\ covid \`", inline: true},
+        {name: `\u200B`, value: ":-`\ covid \` , `\ info user \`, `\ info server \`, `\ github \`:- `\ ping \`", inline: true},
       )
       .setFooter(client.user.tag , client.user.displayAvatarURL())
       .setTimestamp()
@@ -69,7 +69,7 @@ module.exports = {
       .setDescription("To get info of commands `\/{command-name} info\`")
       .setAuthor(`${user.username}`, avatar)
       .addFields(
-        {name: `\u200B`, value: "Cmds :`\ kiss \` , `\ boop \` , `\ dance \` , `\ kill \` , `\ spank \` , `\ pat \` , `\ slap \`, `\ hug \`", inline: true},
+        {name: `\u200B`, value: ":- `\ kiss \` , `\ horny \` , `\ dance \` , `\ match \` , `\ spank \` , :- `\ pat \` , `\ slap \`, `\ hug \`, `\ kill \`, `\ boop \`", inline: true},
       )
       .setFooter(client.user.tag , client.user.displayAvatarURL())
       .setTimestamp()
