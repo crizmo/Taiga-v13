@@ -77,6 +77,19 @@ module.exports = {
       .setThumbnail(avatar)
       .setColor(color);
 
+      const music = new MessageEmbed()
+      .setTitle("Taiga Music!")
+      .setDescription("To get info of commands `\/{command-name} info\`")
+      .setAuthor(`${user.username}`, avatar )
+      .addFields(
+        {name: `\u200B`, value: ":- `\ play \` , `\ pause \`  , `\ volume \` , `\ resume \` , `\ queue \` :- `\ removequeue \` , `\ repeat \` , `\ skip \` , `\ stop \`", inline: true},
+      )
+      .setFooter(client.user.tag , client.user.displayAvatarURL())
+      .setTimestamp()
+      .setImage("https://media.discordapp.net/attachments/912537423160942593/913322763446542376/IMG_7116.png?width=1188&height=389")
+      .setThumbnail(avatar)
+      .setColor(color);
+
       const row = new MessageActionRow().addComponents(
           new MessageButton()
               .setCustomId('base')
@@ -89,6 +102,10 @@ module.exports = {
           new MessageButton()
               .setCustomId('affection')
               .setLabel('Affection')
+              .setStyle('SECONDARY'),
+          new MessageButton()
+              .setCustomId('music')
+              .setLabel('Music')
               .setStyle('SECONDARY'),
           );
 
@@ -118,12 +135,23 @@ module.exports = {
 
           const filter2 = i => i.customId === 'affection' && i.user.id === interaction.member.user.id;
 
-          const collectorMod = interaction.channel.createMessageComponentCollector({ filter2, time: 50000 });
+          const collectorAff = interaction.channel.createMessageComponentCollector({ filter2, time: 50000 });
           
-          collectorMod.on('collect', async i => {
+          collectorAff.on('collect', async i => {
             if (i.customId === 'affection') {
               await i.deferUpdate()
               await i.editReply({ embeds: [affection], components: [row] });
+            }
+          });
+
+          const filter3 = i => i.customId === 'music' && i.user.id === interaction.member.user.id;
+
+          const collectorGames = interaction.channel.createMessageComponentCollector({ filter3, time: 50000 });
+          
+          collectorGames.on('collect', async i => {
+            if (i.customId === 'music') {
+              await i.deferUpdate()
+              await i.editReply({ embeds: [music], components: [row] });
             }
           });
 	},
