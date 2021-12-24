@@ -1,5 +1,7 @@
 Taiga Discord Bot
 
+Stopped working on taiga for some time , working on elina !
+
 Taiga is an anime base discord bot which is completely built to be using using slash command 
 The bot is still under developement but the code is public.
 
